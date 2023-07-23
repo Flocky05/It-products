@@ -16,7 +16,13 @@ body{
     height: 700px;
     width: 100%;
 }
-.header-section-left{
-    
-    
+.btn{
+    background-color: orange;
+    padding: 5px 10px;  
+    border-radius: 3px; 
+    color: white; 
+    text-decoration: none ;
+}
+.btn:hover{
+    background-color: green;
 }
