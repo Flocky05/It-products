@@ -13,7 +13,7 @@ body{
     justify-content: space-around;
     align-items: center;
     background: cover;
-    height: 700px;
+    height: 600px;
     width: 100%;
 }
 .btn{
@@ -25,4 +25,31 @@ body{
 }
 .btn:hover{
     background-color: green;
+}
+/* main section start */
+.services{
+    padding: 40px 20px;
+}
+.services-boxs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box{
+    background-color: rgba(239, 161, 44, 0.11);
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.service-icon{
+    width: 40%;
+}
+.service-box img{
+    width: 100%;  
+}
+.service-text{
+    width: 70%;
+    margin: 10px;
 }
