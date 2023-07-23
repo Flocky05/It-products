@@ -78,11 +78,7 @@ body{
 /* laptop card ends */
 
 /* phone section start  */
-.phone-section{
-    width: 90%;
-    margin: 0 auto;
 
-}
 .phone-cards{
     
     display: flex;
@@ -100,3 +96,13 @@ body{
     padding: 20px;
 }
 /* phone section end  */
+
+/* footer section start */
+.footer-section{
+    margin-top: 30px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+/* footer section end */
