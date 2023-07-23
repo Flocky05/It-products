@@ -4,12 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family:"Poppins";
+}
 .header-section{
     display: flex;
-    background-color: antiquewhite;
+    background-color: rgba(239, 161, 44, 0.11);
     justify-content: space-around;
     align-items: center;
     background: cover;
+    height: 700px;
+    width: 100%;
 }
 .header-section-left{
     
