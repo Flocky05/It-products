@@ -4,3 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header-section{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-around;
+    align-items: center;
+    background: cover;
+}
+.header-section-left{
+    
+    
+}
