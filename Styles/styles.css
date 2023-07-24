@@ -24,7 +24,7 @@ body{
     text-decoration: none ;
 }
 .btn:hover{
-    background-color: green;
+    background: linear-gradient(45deg, rgb(22, 90, 209), rgb(137, 183, 225));  
 }
 /* main section start */
 .services{
@@ -118,6 +118,10 @@ body{
     color: white; 
     text-decoration: none ;
 }
+.btn-submit:hover{
+    background: linear-gradient(45deg, rgb(49, 115, 229), rgb(137, 183, 225)); 
+
+}
 /* Contract section end */
 
 /* footer section start */
@@ -129,3 +133,42 @@ body{
     padding: 30px;
 }
 /* footer section end */
+
+/* Dual image hover effect start */
+.gallery {
+    --g: 8px; /* the gap */
+    
+    display: grid;
+    place-items:center;
+    padding: 20px;
+    background-color: #281c29;
+    clip-path: inset(1px); /* to avoid visual glitchs */
+  }
+  .gallery > img {
+    --_p: calc(-1*var(--g));
+    grid-area: 1/1;
+    width: 350px; /* control the size */
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: .4s .1s;
+  }
+  .gallery > img:first-child {
+    clip-path: polygon(0 0, calc(100% + var(--_p)) 0 , 0 calc(100% + var(--_p)))
+  }
+  .gallery > img:last-child {
+    clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
+  }
+  .gallery:hover > img:last-child,
+  .gallery:hover > img:first-child:hover{
+    --_p: calc(50% - var(--g));
+  }
+  .gallery:hover > img:first-child,
+  .gallery:hover > img:first-child:hover + img{
+    --_p: calc(-50% - var(--g));
+  }
+  
+  
+  
+  
+  
+/* Dual image hover effect end */
