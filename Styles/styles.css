@@ -135,19 +135,23 @@ body{
 /* footer section end */
 
 /* Dual image hover effect start */
+.dual-image{
+    background-color: #2f2a30;
+}
 .gallery {
     --g: 8px; /* the gap */
     
     display: grid;
     place-items:center;
     padding: 20px;
-    background-color: #281c29;
+    
     clip-path: inset(1px); /* to avoid visual glitchs */
   }
   .gallery > img {
     --_p: calc(-1*var(--g));
     grid-area: 1/1;
     width: 350px; /* control the size */
+    height: 100%;
     aspect-ratio: 1;
     cursor: pointer;
     transition: .4s .1s;
