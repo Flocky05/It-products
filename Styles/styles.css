@@ -170,9 +170,12 @@ body{
   .gallery:hover > img:first-child:hover + img{
     --_p: calc(-50% - var(--g));
   }
-  
-  
-  
-  
-  
 /* Dual image hover effect end */
+
+/* footer section start  */
+
+.footer-section :hover h2,p{
+   font-size: 24px;
+   transition:  ease-in 2s;
+}
+/* footer section end */
